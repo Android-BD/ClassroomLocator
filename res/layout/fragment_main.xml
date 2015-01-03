@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/theme" >
+ 
+    <Spinner
+        android:id="@+id/course_name"
+        android:layout_width="match_parent"
+        android:entries="@array/coursename_arrays"
+        android:layout_height="wrap_content"/>
+ 
+    <Spinner
+        android:id="@+id/sections"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+   <!-- android:prompt="@string/coursename_prompt"   -->
+    
+    <Spinner
+        android:id="@+id/classroom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    
+     <Spinner
+        android:id="@+id/landmarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/nearest_landmarks" 
+        android:prompt="@string/landmarks_prompt"/>
+     
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold|italic"
+        android:text="Locate" />
+
+</LinearLayout>

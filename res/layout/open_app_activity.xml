@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/theme" >
+
+    <Button
+        android:id="@+id/btnStudent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnAdmin"
+        android:layout_centerVertical="true"
+        android:textStyle="bold|italic"
+        android:text="@string/studentLabel" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnAdmin"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="21dp"
+        android:layout_marginLeft="38dp"
+        android:text=" Please Select your Role: "
+        android:textStyle="bold|italic"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+         />
+
+    <Button
+        android:id="@+id/btnAdmin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnStudent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="46dp"
+        android:textStyle="bold|italic"
+        android:text="@string/adminLabel" />
+
+</RelativeLayout>
